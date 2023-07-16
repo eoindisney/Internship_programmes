@@ -1,0 +1,6 @@
+map_plot -png \
+         -coast -fcoast -mag -grd Combined_Day1.grd -grdontop \
+         -ctr -poly -fpoly -fpolycol 554090DD \
+         -extra -fit -rotate -hmb -imf -tmlbl -maxmin -pot -latmin 50 \
+         -vecp -vkeyp -vkey blue+green+red+yellow.key -vsf 3 \
+         -frame -dn -st 09:00 -time Combined_Day1.imf.map

@@ -1,0 +1,5 @@
+map_grd Combined_Day0.grd > Combined_Day0.empty.map
+map_addhmb Combined_Day0.empty.map > Combined_Day0.hmb.map
+map_addimf -if imfdata.txt Combined_Day0.hmb.map > Combined_Day0.imf.map
+map_addmodel -o 8 -d l Combined_Day0.imf.map > Combined_Day0.model.map
+map_fit  Combined_Day0.model.map > Combined_Day0.north.map

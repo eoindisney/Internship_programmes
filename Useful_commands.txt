@@ -1,0 +1,17 @@
+find /home/eoindisney/Fitacf -type f -name '*rkn*' -exec cp {} /home/eoindisney/RKN \;
+This will put all the rkn files into a folder called RKN which i had already made
+
+find /home/eoindisney/Fitacf -type f -name '*pgr*' -exec cp {} /home/eoindisney/RKN \;
+
+ls -1 | sort -t. -k1.1,1.8n -k1.9,1.12n 
+This sorts the fitacf files by date and time in ascending order
+
+make_grid -vb /home/eoindisney/INV/20230323*.inv.a.fitacf > /home/eoindisney/Grd/Day3_INV.grd
+
+combine_grid -vb Day1_CLY.grd Day1_INV.grd Day1_PGR.grd Day1_RKN.grd Day1_SAS.grd > Combined_Day1.grd
+combine_grid -vb Day2_CLY.grd Day2_INV.grd Day2_PGR.grd Day2_RKN.grd Day2_SAS.grd > Combined_Day2.grd
+combine_grid -vb Day3_CLY.grd Day3_INV.grd Day3_PGR.grd Day3_RKN.grd Day3_SAS.grd > Combined_Day3.grd
+combine_grid -vb Day4_CLY.grd Day4_INV.grd Day4_PGR.grd Day4_RKN.grd Day4_SAS.grd > Combined_Day4.grd
+combine_grid -vb Day5_CLY.grd Day5_INV.grd Day5_PGR.grd Day5_RKN.grd Day5_SAS.grd > Combined_Day5.grd
+combine_grid -vb Day6_CLY.grd Day6_INV.grd Day6_PGR.grd Day6_RKN.grd Day6_SAS.grd > Combined_Day6.grd
+combine_grid -vb Day7_CLY.grd Day7_INV.grd Day7_PGR.grd Day7_RKN.grd Day7_SAS.grd > Combined_Day7.grd
